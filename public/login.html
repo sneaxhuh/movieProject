@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="signup">
+            <div class="main">
+                <div class="top">
+                    <div class="head">Account Sign In</div>
+                <div class="idk2"><button class="close">X</button></div>
+                </div>
+                
+                <div class="oauth">
+                    <div class="channeli">
+                        <button class="c"><img src="logos/channelilogo.png" class="logo">
+                            <p class="text">Continue with Channeli</p>
+                        </button>
+                    </div>
+                    <div class="google"><button class="c"><img src="logos/google-logo-9824.png" class="logo">
+                            <p class="text">Continue with Google</p>
+                        </button>
+                    <hr class="ju"></div>
+                        
+                </div>
+                <form action="/login" method="POST">
+                <div class="email">
+                    <p class="detail">Username</p>
+                    <input type="text" class="ok" name="user" required>
+                </div>
+                <div class="pass">
+                    <p class="detail">Password</p>
+                    <input type="password" class="ok js-ok" name="password" id="password" required>
+                </div>
+                
+                <div class="create">
+                    <input type="submit" value="Sign In" class="acc">
+
+                </div>
+            </form>
+                <div class="new">
+                    Need an account?<a href="signup.html"><span class="bold">Sign Up</span></a>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+
+</html>

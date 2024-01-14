@@ -1,0 +1,171 @@
+.body {
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    flex-direction: column;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.head {
+    font-weight: 1000;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-top: 20px;
+}
+.overlay {
+    position: fixed; 
+    display:flex;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.signup {
+    padding-top: 10px;
+    height: 700px;
+    width: 500px;
+    background-color: white;
+    border: none;
+    border: solid white 1px;
+    border-radius: 7px;
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+   margin-right: 10px;
+}
+.c {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+   
+    border-radius: 20px;
+    border: solid gray 1px;
+    width:450px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+.c:hover {
+    background-color: rgb(237, 237, 237);
+}
+.acc:hover {
+    opacity: 0.8;
+}
+
+
+.oauth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ok {
+    border: none; 
+            border-bottom: 1px solid black; 
+            outline: none;
+            width:435px
+
+}
+.ok:focus {
+    border: none; 
+    border-bottom: 1px solid #4267B2;
+    outline: none;
+
+}
+.detail {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.email {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.special {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    
+}
+.rightreq {
+    margin-right: 100px;
+}
+.symbol {
+    margin-right: 5px;
+}
+.pass {
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+}
+.idk {
+    margin-bottom: 20px;
+}
+.acc {
+    padding: 13px;
+    background-color: rgb(229,160,13);
+    border-radius: 20px;
+    border: solid white 1px;
+    width:450px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+
+}  
+.already {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.bold {
+    font-weight: 550;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.upload {
+    display: flex;
+    
+    
+}
+
+.no {
+    margin-left:-34px;
+}
+.ju {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 44px;
+    width:400px
+}
+.close {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    border:solid gray 1px;
+    color: gray;
+    margin-left: -45px;
+    cursor: pointer;
+    
+}

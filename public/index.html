@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="signup">
+            <div class="main">
+                <div class="top">
+                    <div class="head">Create your free account</div>
+                <div class="idk2"><button class="close">X</button></div>
+                </div>
+                
+                <div class="oauth">
+                    <div class="channeli">
+                        <button class="c"><img src="logos/channelilogo.png" class="logo">
+                            <p class="text">Continue with Channeli</p>
+                        </button>
+                    </div>
+                    <div class="google"><button class="c"><img src="logos/google-logo-9824.png" class="logo">
+                        <a href="/auth/google" class="text">Continue with Google</a>
+                        </button>
+                    <hr class="ju"></div>
+                        
+                </div>
+                <form action="/sign_up" method="POST" >
+                    <div class="user">
+                        <p class="detail">Username</p>
+                        <input type="text" class="ok" name="user" required>
+
+                    </div>
+                    <div class="email">
+                        <p class="detail">Email Address</p>
+                        <input type="text" class="ok" id="email" name="email" required >
+                    </div>
+                    <div class="pass">
+                        <p class="detail">Create Password</p>
+                        <input type="text" class="ok js-ok" oninput="checkRequirements()" placeholder="10 characters minimum" id="password" name="password" required>
+                    </div>
+
+                
+                
+                <div class="req">
+                    <p class="idk">Password Requirements</p>
+                    <div class="special">
+
+                        <div class="leftreq">
+
+                            <p><span class="symbol1">&#x2716;</span> 10 characters</p>
+                            <p><span class="symbol2">&#x2716;</span> Uppercase letter</p>
+                            <p><span class="symbol3">&#x2716;</span> Special character</p>
+                        </div>
+                        <div class="rightreq">
+                            <p><span class="symbol4">&#x2716;</span> Lowercase letter</p>
+                            <p><span class="symbol5">&#x2716;</span> Number</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-pic">
+                        <p class="detail">Profile Picture</p>
+                        <input type="file" class="ok" name="profilePicture" accept="image/*" required>
+                      </div>
+
+                </div>
+                <div class="create">
+                    <input type="submit" value="Create an Account" class="acc">
+
+                </div>
+            </form>
+                <div class="already">
+                    Already have an account?<a href="login.html"><span class="bold">Sign In</span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <script src="signup.js"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+    
+        if (error === 'email_exists') {
+            alert('An account with this email already exists. Please use a different email.');
+        }
+    </script>
+    
+</body>
+</html>

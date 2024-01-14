@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="signup">
+            <div class="main">
+                <div class="top">
+                    <div class="head">Create your free account</div>
+                <div class="idk2"><button class="close">X</button></div>
+                </div>
+                
+                <div class="oauth">
+                    <div class="channeli">
+                        <button class="c"><img src="logos/channelilogo.png" class="logo">
+                            <p class="text">Continue with Channeli</p>
+                        </button>
+                    </div>
+                    <div class="google"><button class="c"><img src="logos/google-logo-9824.png" class="logo">
+                            <p class="text">Continue with Google</p>
+                        </button>
+                    <hr class="ju"></div>
+                        
+                </div>
+                <form action="">
+                    <div class="email">
+                        <p class="detail">Email Address</p>
+                        <input type="text" class="ok" required >
+                    </div>
+                    <div class="pass">
+                        <p class="detail">Create Password</p>
+                        <input type="text" class="ok js-ok" oninput="checkRequirements()" placeholder="10 characters minimum">
+                    </div>
+                    <div class="upload">
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <label for="fileInput">Select Profile Picture:</label>
+                            <input type="file" class="fileInput" name="fileInput" accept=".jpg, .jpeg, .png">
+                            <input type="submit" class="no" value="Upload">
+                        </form>
+                    </div>
+                </form>
+                
+                
+                <div class="req">
+                    <p class="idk">Password Requirements</p>
+                    <div class="special">
+
+                        <div class="leftreq">
+
+                            <p><span class="symbol1">&#x2716;</span> 10 characters</p>
+                            <p><span class="symbol2">&#x2716;</span> Uppercase letter</p>
+                            <p><span class="symbol3">&#x2716;</span> Special character</p>
+                        </div>
+                        <div class="rightreq">
+                            <p><span class="symbol4">&#x2716;</span> Lowercase letter</p>
+                            <p><span class="symbol5">&#x2716;</span> Number</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="create">
+                    <button class="acc">Create an Account</button>
+                </div>
+                <div class="already">
+                    Already have an account?<a href="login.html"><span class="bold">Sign In</span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <script src="signup.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+
+.bg {
+    height: 100%;
+    width:100%;
+    
+    object-fit: cover;
+    
+    opacity: 0.2;
+}
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100%);
+}
+.lol {
+    height: 400px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 60px;
+
+}
+.movie-description{
+    display: flex;
+}
+.details {
+    position: relative;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.title {
+    font-weight: bold;
+    font-size: 50px;
+    color:white;
+}.not-genre {
+    display: flex;
+    margin-bottom: 5px;
+    color:#555D68;
+}.smalldetail {
+    margin-top: -40px;
+}
+.small,.genre{
+    color:gray;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.imdb {
+    height: 25px;
+}
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    width:160px;
+    margin-top: 10px;
+}
+.imbdrat,.reel {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.thoda {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 2px;
+    color:white;
+}
+.reelgood {
+    height: 16px;
+}
+.playmov {
+    border:solid 0px;
+    background-color: rgb(229, 160, 13);
+    border-radius: 20px;
+    height: 30px;
+    width:70px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.playmov:hover,.trailer:hover {
+    background-color: black;
+    color:rgb(229, 160, 13);
+}
+.trailer {
+    border:solid 0px;
+    background-color: rgb(229, 160, 13);
+    border-radius: 20px;
+    height: 30px;
+    width:120px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+
+
+.plot {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width:700px;
+    color:white;
+}
+
+.delete {
+    margin-right: 220px;
+    cursor: pointer;
+}
+.reviews {
+    margin-top: 88px;
+    background-color: #0B1118;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1000px;
+
+}
+.heading {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color:white;
+    font-size: 40px;
+}
+.pad {
+    margin-left: 80px;
+}
+.rev {
+    border:0 solid;
+    border-radius: 50px;
+    height: 40px;
+    width: 500px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: #171B27;
+    color:white;
+}
+.input {
+    display: flex;
+    justify-content: space-between;
+    width:600px;
+    align-items: center;
+}
+.opt1,.opt2 {
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.review-design {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    width:900px;
+    border:0px solid;
+    border-radius: 20px;
+    background-color: #171B27;
+    padding: 20px;
+}
+.reviewpfp {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.reviewbox {
+    margin-left: 114px;
+    width:500px;
+}
+.username {
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:180px;
+    margin-bottom: 10px;
+    color:#555D68;
+}
+.thumbsup{
+    height: 15px;
+    margin-right: 8px;
+}
+.actualrev {
+    font-size: 15px;
+    color:#555D68;
+    width:500px;
+}
+.like {
+    margin-top: 10px;
+    border:0 solid;
+    background-color: black;
+    color:white;
+    height: 25px;
+    border-radius: 8px;
+}
+.botrev {
+    display: flex;
+    justify-content: space-between;
+    width:700px;
+    align-items: center;
+}
+
+.notok {
+    display: flex;
+    flex-direction: column;
+    
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.love {
+    height: 15px;
+}
+
+.liked {
+    color: red;
+}

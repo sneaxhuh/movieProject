@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/Registration_Form/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="whole">
+    
+        <div class="top">
+            <video style="pointer-events: none;" autoplay loop muted>
+                <source src="images/movies_and_tv_hero_background_2023.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+    
+            <div class="head-text">
+                <p class="bold">Wanna know about a movie?</p>
+                <p class="norm">You've come to the right place. We've got a bunch here at CineInsight and you can start
+                    exploring now!</p>
+               
+            </div>
+            <div class="head">
+                <div class="left">
+                    <img src="images/cineinsight-high-resolution-logo-black.png" alt="" class="logo">
+    
+                    <input type="text" class="ok" placeholder="Find movies">
+                </div>
+                <div class="right">
+                    <div class="filters">
+                        <ul class="main-navigation">
+                            <li><a class="extra">Filters</a>
+                                <ul>
+                                    <li><a>Language</a>
+                                        <ul>
+                                            <li><a>English</a></li>
+                                            <li><a>Hindi</a></li>
+                                            <li><a>Russian</a></li>
+                                            <li><a>Telugu</a></li>
+                                        </ul>
+                                    <li><a>Genre</a>
+                                        <ul>
+                                            <li><a onclick="horrorPage()">Horror</a></li>
+                                            <li><a onclick="dramaPage()">Drama</a></li>
+                                            <li><a onclick="actionadvPage()">Action & Adventure</a></li>
+                                            <li><a onclick="romancePage()">Romance</a></li>
+                                        </ul>
+                                    <li><a>IMDB Ratings</a>
+                                        <ul>
+
+                                            <li><a onclick="imdbChecker(3)">Between 8 and 9</a></li>
+                                            <li><a onclick="imdbChecker(4)">More than 9</a></li>
+                                        </ul>
+                                    <li><a>Platform Availability</a>
+                                        <ul>
+                                            <li><a onclick="availabilityChecker(1)">Netflix</a></li>
+                                            <li><a onclick="availabilityChecker(2)">Amazon Prime</a></li>
+                                            <li><a onclick="availabilityChecker(3)">Disney+</a></li>
+                                            <li><a onclick="availabilityChecker(4)">Hulu</a></li>
+                                        </ul>
+    
+                                    </li>
+                    </div>
+                    <a href="profilepage.html"><button class="signup2" id="openPopupBtn">Profile</button></a>
+                    <button class="signin">Favourites</button>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="main-movie">
+            <div class="altyo"></div>
+            <div class="page"><button class="all">All Movies</button></div>
+            <div class="movie-container" id="moviesContainer">
+                
+            </div>
+            <div class="pagination" id="pagination"></div>
+            
+        </div>
+        <footer class="footer">
+            <div>
+                <h4>Movies</h4>
+                <h4>TV Series</h4>
+                <h4>Animated Movies</h4>
+            </div>
+            <div>
+                <h4>Privacy Policy</h4>
+                <h4>Cookie Policy</h4>
+                <h4>Terms of Use</h4>
+            </div>
+            <div>
+                <h4>Help Center</h4>
+                <h4>Support</h4>
+                <h4>FAQ</h4>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/img_iitr/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.facebook.com/search/top?q=img%2C%20iit%20roorkee" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://twitter.com/img_iitr" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="moviepage.css">
+</head>
+
+<body style="height: 3000px;">
+    <div class="content">
+        <div class="container">
+            
+  
+              </div>
+  
+          </div>
+        </div>
+        
+          <div class="reviews">
+              <div class="pad">
+                  <div class="heading">Reviews</div>
+              <div class="inputrev">
+                  <div class="input">
+                      <input type="text" class="rev" placeholder="Leave a Review">
+                      <div class="options">
+                          <img src="images/thumbsup.png" alt="" class="opt1">
+                      <img src="images/dislike.png" alt="" class="opt2">
+                      </div>
+                  </div>
+                 
+                  
+                  <div class="notok">
+                      <div class="review-design" data-review-id="${Id}">
+                          <div class="profile"><img src="images/defaultpfp.jpg" alt="" class="reviewpfp"></div>
+                          <div class="reviewbox">
+                              <div class="reviewtop">
+                                  <div class="username">Nia Rene</div>
+                                  <div class="date">
+                                      <div class="choice"><img src="images/thumbsup.png" alt="" class="thumbsup">Liked It</div>
+                                      <div class="actualdate">Sep.28th,2023</div>
+                                  </div>
+      
+                              </div>
+                              <div class="actualrev">Good not great. It requires a healthy suspension of disbelief to enjoy. Feels like it was trying to be a Nolan film but missed the mark throughout. Visually interesting but mediocre plot</div>
+                              <div class="botrev">
+                                  <div class="likerev"><button onclick="likerev()" class="like"><img src="images/notlove.png" class="love" alt=""> <span id="likeCount">5</span></button></div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              </div>
+              
+          </div>
+    </div>
+   
+    <script src="main.js"></script>
+    <script src="moviepage.js"></script>
+    
+</body>
+
+</html>

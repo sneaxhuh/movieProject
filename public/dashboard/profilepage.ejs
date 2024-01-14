@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profilepage.css">
+</head>
+<body>
+    <div class="whole">
+        <div class="bg-image">
+            <img src="images/wp7046960-every-horror-character-desktop-wallpapers.jpg" alt="" class="bg">
+        </div>
+        <div class="profile">
+            <div class="pfp">
+                <img src="<%= profilePicture || 'images/defaultpfp.jpg' %>" alt="" class="userimg">
+            </div>
+                <div class="details">
+                    <div class="username"><span class="strong">Username:</span><span class="light"><%= user %></span></div>
+                    <div class="email"><span class="strong">Email:</span><span class="light"><%= email %></span></div>
+                </div>
+                <div class="about">
+                    <p class="strong">About Me</p>
+                    <div class="aboutme" id="aboutMeDisplay" contenteditable="true" oninput="onAboutMeInput()"></div>
+                    <button class="button" onclick="openUpdateAboutMeModal()">Update About Me</button>
+                </div>
+                <div id="updateAboutMeModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeUpdateAboutMeModal()">&times;</span>
+                        <p class="headabout" for="newAboutMe">New About Me:</p>
+                        <input id="newAboutMe" class="aboutme hm" name="newAboutMe">
+                        <button class="save" onclick="updateAboutMe()">Save</button>
+                    </div>
+                </div>
+                
+                <div class="log">
+                    <button class="button">Log Out</button>
+                </div>
+            </div>
+            
+               
+            
+                
+            
+        </div>
+    </div>
+    <script src="profilepage.js"></script>
+</body>
+</html>

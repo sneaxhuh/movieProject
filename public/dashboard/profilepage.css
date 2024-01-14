@@ -1,0 +1,128 @@
+.bg {
+    height: 100%;
+    width:100%;
+    
+    object-fit: cover;
+    
+    opacity: 0.2;
+}
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100%);
+}
+
+.profile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border:0 solid;
+    background-color: #0B1118;
+   padding-bottom: 15px;
+    width:500px;
+    left:500px;
+    top :5px;
+    border-radius: 10px;
+}
+.userimg {
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+.pfp {
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bot {
+    position: absolute;
+}
+.details {
+    margin-left: 150px;
+    
+   
+}
+.strong {
+    font-weight: bold;
+    font-size: 20px;
+    color:white;
+}
+.light {
+    font-size: 20px;
+    color:#838b93cc;
+}
+.about {
+    margin-left: 20px;
+    color:#838b93cc
+}
+.aboutme {
+    background-color: #171B27;
+    height: 80px;
+    width:400px;
+    margin-left: 20px;
+    border:0 solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    display:block;
+    color:#838b93cc;
+}
+
+.button{
+    cursor: pointer;
+    border: solid 0px ;
+    background-color: #171B27;
+    border-radius: 20px;
+    height: 35px;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 20px;
+    width:150px;
+    color:#838b93cc;
+    
+}
+
+.log{
+    margin-left: 21px;
+}
+
+.headabout {
+    cursor: pointer;
+    border: solid 0px ;
+    background-color: #171B27;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 20px;
+    width:130px;
+    color:#838b93cc;
+    padding-left: 50px;
+}
+
+.modal {
+    margin-top: -25px;
+}
+
+.save {
+    cursor: pointer;
+    border: solid 0px ;
+    background-color: #171B27;
+    border-radius: 20px;
+    height: 35px;
+    font-size: 15px;
+    margin-left: 170px;
+    margin-top: 20px;
+    width:150px;
+    color:#838b93cc;
+    margin-bottom: -10px;
+}
+
+.hm {
+    margin-left: 40px;
+}
